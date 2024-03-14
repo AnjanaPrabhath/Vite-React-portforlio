@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
-  mode: "jit",
+  mode : 'jit',
   theme: {
     extend: {
       colors: {
@@ -14,6 +14,7 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
       },
     },
+
     screens: {
       xs: "480px",
       ss: "620px",
@@ -24,4 +25,5 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}
+
